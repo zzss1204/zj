@@ -7,32 +7,128 @@
     <link rel="stylesheet" href="/zj/styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>这是我的个人网站</h1>
-        <p>欢迎来到我的个人网站！在这里你可以找到关于我的信息、我的项目以及我的联系方式。</p>
-
-        <h2>关于我</h2>
-        <div class="about">
-            <p>在这里写一些关于你自己的介绍。</p>
+    div class="container">
+        <header>
+            <h1><span class="highlight">我的</span>个人简历</h1>
+            <p class="subtitle">探索成长之路</p>
+        </header>
+        
+        <div class="profile">
+            <div class="photo-container">
+                <img src="your-photo.jpg" alt="个人照片" id="profile-photo">
+                <div class="photo-decoration">
+                    <span class="decoration-leaf"></span>
+                </div>
+            </div>
+            <div class="info">
+                <h2 id="name">郑锦</h2>
+                <p id="contact">电话: 13720396900| 邮箱: 2156677587@qq.com</p>
+                <p id="position">前端开发工程师</p>
+            </div>
         </div>
-
-        <h2>我的项目</h2>
-        <div class="projects">
+        
+        <nav class="module-nav">
             <ul>
-                <li>项目1：描述项目1的内容。</li>
-                <li>项目2：描述项目2的内容。</li>
-                <li>项目3：描述项目3的内容。</li>
+                <li class="active" data-module="personal-info"><i class="fas fa-user"></i> 个人信息</li>
+                <li data-module="education"><i class="fas fa-graduation-cap"></i> 教育背景</li>
+                <li data-module="skills"><i class="fas fa-certificate"></i> 荣誉证书</li>
+                <li data-module="evaluation"><i class="fas fa-star"></i> 自我评价</li>
             </ul>
-        </div>
+        </nav>
+        
+        <div class="resume-content">
+            <section id="personal-info" class="module active">
+                <div class="module-header">
+                    <h3><i class="fas fa-user"></i> 个人信息</h3>
+                    <div class="module-decorations">
+                        <div class="decoration-left"></div>
+                        <div class="decoration-right"></div>
+                    </div>
+                </div>
+                <div class="module-body">
+                    <p>姓名: <span class="highlight">郑锦</span></p>
+                    <p>性别: <span class="highlight">女</span></p>
+                    <p>年龄: <span class="highlight">22岁</span></p>
+                    <p>居住地: <span class="highlight">湖北省武汉市</span></p>
+                </div>
+            </section>
+            
+            <section id="education" class="module">
+                <div class="module-header">
+                    <h3><i class="fas fa-graduation-cap"></i> 教育背景</h3>
+                    <div class="module-decorations">
+                        <div class="decoration-left"></div>
+                        <div class="decoration-right"></div>
+                    </div>
+                </div>
+                <div class="module-body">
+                    <div class="education-item">
+                        <h4>湖北大学（本科） 华中农业大学（硕士）</h4>
+                        <p>生态学 | 学士学位 | 2020年至今</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="skills" class="module">
+                <div class="module-header">
+                    <h3><i class="fas fa-certificate"></i> 荣誉证书</h3>
+                    <div class="module-decorations">
+                        <div class="decoration-left"></div>
+                        <div class="decoration-right"></div>
+                    </div>
+                </div>
+                <div class="module-body">
+                    <div class="skills-container">
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <div class="skill-info">
+                                <h4>知识竞赛</h4>
+                                <p>大学生急救知识技能专题竞赛二等奖
+                                   全国大学生创新能力大赛一等奖
+                                   全国大学生心理知识竞赛一等奖
+                                   大学生环保知识竞赛优秀奖
+                                   学生生活安全专题竞赛二等奖
+                                   学业奖学金三等奖
+                                   学业奖学金一等奖
 
-        <h2>联系我</h2>
-        <div class="contact">
-            <p>你可以通过以下方式联系我：</p>
-            <p>邮箱：<a href="mailto:your-email@example.com">your-email@example.com</a></p>
-            <p>LinkedIn：<a href="https://www.linkedin.com" target="_blank">我的LinkedIn</a></p>
-            <p>GitHub：<a href="https://github.com/zzss1204/zj1204" target="_blank">我的GitHub</a></p>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="skill-item">
+                            <i class="fas fa-language"></i>
+                            <div class="skill-info">
+                                <h4>语言能力</h4>
+                                <p>中文(母语), 英语(熟练)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="evaluation" class="module">
+                <div class="module-header">
+                    <h3><i class="fas fa-star"></i> 自我评价</h3>
+                    <div class="module-decorations">
+                        <div class="decoration-left"></div>
+                        <div class="decoration-right"></div>
+                    </div>
+                </div>
+                <div class="module-body">
+                    <p>我是一个充满热情和动力的人，始终保持积极乐观的心态面对生活中的挑战</p>
+                    <p>在工作中，我注重细节，乐于接受新知识和新技能。在团队合作中，我始终保持积极的态度，乐于分享和学习。</p>
+                    <p>我对未来充满信心，愿意迎接新的机遇和挑战，并在这个过程中不断成长，成为一个更好的自己。</p>
+                </div>
+            </section>
         </div>
-        <p>感谢你的访问！</p>
+    </div>
+    
+    <div class="floating-decorations">
+        <div class="decoration-leaf-1"></div>
+        <div class="decoration-leaf-2"></div>
+        <div class="decoration-cloud"></div>
     </div>
 
     <script src="/zj/script.js"></script>
