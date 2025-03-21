@@ -5,14 +5,18 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    background-image: url('background.jpg'); /* 添加背景图 */
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9); /* 添加半透明背景 */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 h1, h2 {
@@ -43,3 +47,57 @@ h1, h2 {
 .contact a:hover {
     text-decoration: underline;
 }
+
+/* 头像样式 */
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* 设置为圆形 */
+    object-fit: cover;
+    border: 4px solid #fff; /* 添加白色边框 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 装饰样式 */
+.photo-decoration {
+    position: relative;
+}
+
+.decoration-leaf {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url('decoration-leaf.png'); /* 添加装饰叶子图片 */
+    background-size: cover;
+}
+
+.floating-decorations {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* 防止装饰元素影响交互 */
+}
+
+.decoration-leaf-1, .decoration-leaf-2, .decoration-cloud {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.decoration-leaf-1 {
+    top: 20px;
+    left: 20px;
+    background-image: url('decoration-leaf.png');
+}
+
+.decoration-leaf-2 {
+    bottom: 20px;
+    right: 20px;
+    background-image: url('decoration-leaf.png');
+}
+
